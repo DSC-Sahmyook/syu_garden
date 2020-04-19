@@ -154,7 +154,9 @@
 					<p><strong>${row.name}</strong></p>
 					</td>`;
             } else if (context.progressed_days >= {{ gardening_days }}) {
+				// 기간 종료이후 내용 표출이 제대로 안돼서 추가함.
 				let avatar_img_url = getAvatarImgUrl(row.name);
+				// 
                 today_attendance_html += `<td class="td-td">
 					<a href="/users/${row.name}">
 					<img src="${avatar_img_url}" width="100" class="profile_img img_gray">
