@@ -189,7 +189,7 @@ class Garden:
             if user not in result:
                 result[user] = {}
 
-                result[user][selected_date] = None
+            result[user][selected_date] = None
 
             if selected_date in attend_dict[user]:
                 result[user][selected_date] = attend_dict[user][selected_date][0]["ts"]
