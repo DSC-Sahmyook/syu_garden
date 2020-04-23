@@ -209,7 +209,7 @@ class Garden:
                 message += "@%s " % members[result["user"]]["slack"]
 
         self.slack_client.chat_postMessage(
-            channel='#gardening-for-100days',
+            channel='garden_commit',
             text=message,
             link_names=1
         )
