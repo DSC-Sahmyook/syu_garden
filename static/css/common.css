@@ -7,6 +7,7 @@ body {background-color: #f5f5f5;}
 
 /* font */
 * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+/* a { color : #239a3b; } */
 
 /* footer */
 .footer {margin-bottom: 2rem;}
@@ -14,19 +15,11 @@ body {background-color: #f5f5f5;}
 	padding: 3px 0px;
 }
 
-/* main block */
-main {
-	background-color: #f5f5f5;
-	margin-top: 85px;
-	padding-top: 1px;
-	z-index: 1;
-}
-
 /* scroll btn */
 #topBtn {
     opacity: 0;
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     right: 20px;
 	border: none;
 	border-radius: 50px;
@@ -75,13 +68,9 @@ main {
     line-height: 1;
 }
 .custom-nav {
+	/* background-color: #24292e; */
 	background-color: #155216;
-	background-image: linear-gradient(135deg, #7ac714 -30%, #155216 100%);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
+    background-image: linear-gradient(135deg, #7ac714 -30%, #155216 100%);
 }
 @media (min-width: 576px) {
 	.container-fluid {
@@ -123,6 +112,7 @@ main {
 	display: -webkit-flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	/* border: 1px solid #d1d5da; */
 }
 .card-header {
 	padding: 1rem 1.35rem;
@@ -187,6 +177,7 @@ main {
 .rank {
 	text-align: center;
 	min-width: 130px;
+	/* position: relative; */
 }
 .rank img {
 	margin-bottom: 1rem;
@@ -232,7 +223,6 @@ main {
 
 
 /*/---- User Page ----/*/
-
 /* user */
 #user-card {
 	flex-wrap: inherit!important;
@@ -260,8 +250,9 @@ main {
 }
 
 /*/---- Device Screen ----/*/
-
-/* 대부분의 스마트폰 모바일 기기(세로) */
+/*
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+*/
 @media (min-width: 320px) and (max-width: 480px) {
 	.footer {
 		font-size: 0.9rem;
@@ -281,6 +272,8 @@ main {
 	}
 }
 
-/* 저해상도 태블릿, 모바일(가로) */
+/*
+##Device = 저해상도 태블릿, 모바일(가로)
+*/
 @media (min-width: 481px) and (max-width: 767px) {
 }
