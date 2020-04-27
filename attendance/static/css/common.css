@@ -119,13 +119,12 @@ body {background-color: #f5f5f5;}
     margin-bottom: 0;
 	background-color: rgba(0, 0, 0, 0.03);
 	border-bottom: none;
-
 }
 .card-header:first-child {
-    border-radius: calc(.35rem - 1px) calc(.35rem - 1px) 0 0;
+    border-radius: calc(.35rem) calc(.35rem) 0 0;
 }
 .card-footer:last-child {
-    border-radius: 0 0 calc(.35rem - 1px) calc(.35rem - 1px);
+    border-radius: 0 0 calc(.35rem) calc(.35rem);
 }
 .card-header h2 {
 	font-size: 1.35rem;
