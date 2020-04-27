@@ -32,12 +32,12 @@ body {background-color: #f5f5f5;}
 }
 .sub-title {
 	font-family: 'Nanum Pen Script', cursive;
-    color: #e0ff00;
+    color: #faf31e;
 	margin-bottom: 6px;
     padding-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
-    text-shadow: 0px 2px 0px #0000005e;
+	text-shadow: 0px 2px 0px #000000c9;
     line-height: 1;
 }
 .custom-nav {

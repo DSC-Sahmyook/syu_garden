@@ -35,12 +35,7 @@
             $.each(data, function(index, user) {
                 let avatar_img_url = getAvatarImgUrl(user);
 				html += `<a href="/users/${user}">`;
-					// html += `<span class="user_wrapper">`;
-						// html += `<span class="test2">`;
 							html += `<img src="${avatar_img_url}" width="40" />`;
-							// html += `<span>${user}</span>`;
-						// html += `</span>`;
-					// html += `</span>`;
 				html += `</a>`;	
             });
             $("#users").html(html);
@@ -286,14 +281,39 @@ ${data_row.user}
             let avatar_img_url = getAvatarImgUrl(item.user);
             let num_per_line = 7;
             if (idx % num_per_line === 0)
+
 			rank_html += `<tr>`;	
-			rank_html += `<td class="rank">
-								<p><strong>${item.rank}등</strong> <span class="rank-percent">${Math.round(item.rate)}%<span></p>
-								<a href="/users/${item.user}">
-								<img src="${avatar_img_url}" width="80" style="vertical-align:top"/>
-								</a>
+			rank_html += `<td class="rank">`
+				if (item.rank == '1') {
+					rank_html += `<p><strong>${item.rank}등</strong>`;
+				}
+				else if (item.rank == '2') {
+					rank_html += `<p><strong>${item.rank}등</strong>`;
+				} 
+				else if (item.rank == '3' ) {
+					rank_html += `<p><strong>${item.rank}등</strong>`;
+				}
+				else {
+					rank_html += `<p>${item.rank}등`;
+				}
+			rank_html += `					
+							<span class="rank-percent">${Math.round(item.rate)}%<span></p>
+							<a href="/users/${item.user}">
+							<div class="rank-profile-img" style="vertical-align:top; background-image:url(${avatar_img_url})">`
+							if (item.rank == '1') {
+								rank_html += `<sapn class="medal">🥇</sapn>`;
+							}
+							else if (item.rank == '2') {
+								rank_html += `<sapn class="medal">🥈</sapn>`;
+							} 
+							else if (item.rank == '3' ) {
+								rank_html += `<sapn class="medal">🥉</sapn>`;
+							}
+			rank_html += `	
+								</div></a>
 								<p>${item.user}</p>
 						  </td>`;
+			
 
             if (idx % num_per_line === num_per_line - 1)
 			rank_html += `</tr>`;
