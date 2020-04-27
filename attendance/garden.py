@@ -202,7 +202,7 @@ class Garden:
         members = self.get_members()
         today = datetime.today().date()
 
-        message = "[미출석자 알람]\n"
+        message = "[삼육 정원사들 미출석자 알림]\n"
         results = self.get_attendance(today)
         for result in results:
             if result["first_ts"] is None:
