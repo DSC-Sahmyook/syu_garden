@@ -11,7 +11,7 @@ multidict==4.7.5
 pymongo==3.10.1
 python-markdown-slack==1.0.6
 pytz==2019.3
-PyYAML==5.3.1
+PyYAML==5.4
 slackclient==2.5.0
 sqlparse==0.3.1
 whitenoise==5.0.1
